@@ -1,0 +1,22 @@
+Points/Questions:
+
+- Product -> add id assigning method
+- Client -> add id assigning method
+- Robert to confirm if ProductRepository class is the current "switcher method" for operations on Database?
+- Robert to confirm why removeFromDB has a return type Long?
+- Boolean vs. boolean
+- Enums cannot be used as parameters if not stored in a separate class
+- Do we need exceptions in methods of class ProductValidator?
+- Robert to advise how to make dependent enums (e.g. excel-like dependent dropdowns)
+- To review method calculateClientBasket with regards to quantity / price aspect >> disuss with team how shall be calculated
+- Add Client creation/deletion timestamps
+- Add export from excel for products also. Use generics
+- Consider where clients / products excel export is to be used and consider how to
+
+Notes:
+
+Interesting way to write ifs - why there are no {}?:
+
+   if (validateProductName(product)) if (validateProductQuantity(product)) if (validateProductPrice(product))
+            if (validateProductMeasureName(product)) if (validateProductCategory(product)) return true;
+        return false;
